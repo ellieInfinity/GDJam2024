@@ -580,10 +580,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
+    - {x: 1, y: 1}
+    - {x: -1, y: 0}
     - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: 1, y: 0}
   - exec: 1
     tiles:
     - {fileID: 0}
@@ -591,10 +591,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: -1, y: 1}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    - {x: 2, y: 1}
   - exec: 2
     tiles:
     - {fileID: 0}
@@ -602,10 +602,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
     - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: 1, y: 0}
   - exec: 3
     tiles:
     - {fileID: 0}
@@ -613,10 +613,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
+    - {x: -1, y: 1}
+    - {x: 0, y: 1}
     - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: 1, y: 0}
   - exec: 4
     tiles:
     - {fileID: 0}
@@ -624,9 +624,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    - {x: -1, y: 0}
     - {x: 0, y: 0}
   - exec: 5
     tiles:
@@ -635,10 +635,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
     - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: 1, y: 0}
   - exec: 6
     tiles:
     - {fileID: 0}
@@ -646,10 +646,10 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     cells:
+    - {x: -1, y: 1}
+    - {x: -1, y: 0}
     - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
-    - {x: 0, y: 0}
+    - {x: 1, y: 0}
 --- !u!1 &1971361957
 GameObject:
   m_ObjectHideFlags: 0
