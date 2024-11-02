@@ -31,11 +31,16 @@ public class Gacha : MonoBehaviour
 
             money -= 10;
 
-            //Ultra rare
+            //Bye bye money
             if (prob == 1)
             {
+                money = 0;
+            }
+            //Ultra rare
+            else if (prob == 1)
+            {
                 int newProb = Random.Range(1, 3);
-                if (newProb == 1)
+                if (newProb == 2)
                 {
                     print("Inverted KC");
                     Instantiate(gdsa[0], spawnPoint.transform.position, transform.rotation);
@@ -47,7 +52,7 @@ public class Gacha : MonoBehaviour
                 }
             }
             //Rare
-            else if (prob > 1 && prob <= 10)
+            else if (prob > 2 && prob <= 10)
             {
                 int newProb = Random.Range(1, 3);
                 if (newProb == 1)
