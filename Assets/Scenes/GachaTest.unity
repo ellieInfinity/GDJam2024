@@ -250,7 +250,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325a6e14097d0004a83a8aecd678a2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gdsa: []
+  gdsa:
+  - {fileID: 9181286462437403411, guid: acebc74261e27de4cb8e918135782e6e, type: 3}
+  - {fileID: 7750529390600266879, guid: e5d437d0625a91147b38087994d4cb4a, type: 3}
+  - {fileID: 5756317314325948929, guid: 6a1752e5853b820499a5a540e7307179, type: 3}
+  - {fileID: 4649005993285855636, guid: 27a9c539e8e984645b18145294592563, type: 3}
+  - {fileID: 3381118157511157266, guid: fbb490336c4fa50428a286e73027b2d9, type: 3}
+  - {fileID: 469919351933461315, guid: 18fa1b50aea8240498636fed7d8b1473, type: 3}
+  - {fileID: 1024478734360391697, guid: c4610bb91531cb044b95523cdb52bb6c, type: 3}
+  - {fileID: 3721760182792789920, guid: 0586092d863f3684ea398fdfc4a1b73d, type: 3}
+  - {fileID: 2077746627818561045, guid: 032c3335aec4650408573a8fa69feac4, type: 3}
+  - {fileID: 4821989517859887051, guid: 709acc340b4ccf64baa9e0b699e17647, type: 3}
+  - {fileID: 6353171937016318756, guid: 6802ddbe12b50b645b2779e030b2022e, type: 3}
+  money: 2147483647
+  spawnPoint: {fileID: 280859788}
 --- !u!4 &129242968
 Transform:
   m_ObjectHideFlags: 0
@@ -261,6 +274,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1627414, y: -0.8139149, z: 0.0066057127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &280859788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280859789}
+  m_Layer: 0
+  m_Name: Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280859789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280859788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -323,7 +367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Cost: 10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -438,7 +482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -435.5, y: -275}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &615936950
@@ -712,5 +756,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 129242968}
   - {fileID: 931591243}
+  - {fileID: 280859789}
   - {fileID: 1557499}
   - {fileID: 1625848104}

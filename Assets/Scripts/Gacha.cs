@@ -8,101 +8,96 @@ using Random = UnityEngine.Random;
 public class Gacha : MonoBehaviour
 {
     [SerializeField] List<GameObject> gdsa = new List<GameObject>();
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private int money;
+    [SerializeField] private GameObject spawnPoint;
 
     public void Roll()
     {
-        int prob = Random.Range(1, 100);
-        
-        if (prob == 1)
+        if (money >= 10)
         {
-            int newProb = Random.Range(1, 3);
-            if (newProb == 1)
+            int prob = Random.Range(1, 101);
+
+            money -= 10;
+
+            //Ultra rare
+            if (prob == 1)
             {
-                print("Inverted KC");
-            }
-            else
-            {
+                int newProb = Random.Range(1, 3);
+                if (newProb == 1)
+                {
+                    print("Inverted KC");
+                    Instantiate(gdsa[0], spawnPoint.transform.position, transform.rotation);
+                }
+                else
                 {
                     print("Inverted Lucas");
+                    Instantiate(gdsa[1], spawnPoint.transform.position, transform.rotation);
                 }
             }
-        }
-        else if (prob > 1 && prob <= 10)
-        {
-            int newProb = Random.Range(1, 3);
-            if (newProb == 1)
+            //Rare
+            else if (prob > 1 && prob <= 10)
             {
+                int newProb = Random.Range(1, 3);
+                if (newProb == 1)
                 {
                     print("KC");
+                    Instantiate(gdsa[2], spawnPoint.transform.position, transform.rotation);
                 }
-            }
-            else
-            {
+                else
                 {
                     print("Adam");
+                    Instantiate(gdsa[3], spawnPoint.transform.position, transform.rotation);
                 }
             }
-        }
-        else if (prob > 10 && prob <= 30)
-        {
-            int newProb = Random.Range(1, 5);
-            if (newProb == 1)
+            //Uncommon
+            else if (prob > 10 && prob <= 30)
             {
+                int newProb = Random.Range(1, 5);
+                if (newProb == 1)
                 {
                     print("Dean");
+                    Instantiate(gdsa[4], spawnPoint.transform.position, transform.rotation);
                 }
-            }
-            else if (newProb == 2)
-            {
+                else if (newProb == 2)
                 {
                     print("Logan");
+                    Instantiate(gdsa[5], spawnPoint.transform.position, transform.rotation);
                 }
-            }
-            else if (newProb == 3)
-            {
+                else if (newProb == 3)
                 {
                     print("Lucas");
+                    Instantiate(gdsa[6], spawnPoint.transform.position, transform.rotation);
                 }
-            }
-            else
-            {
+                else
                 {
                     print("Jason");
+                    Instantiate(gdsa[7], spawnPoint.transform.position, transform.rotation);
+                }
+            }
+            //Common
+            else if (prob > 30 && prob <= 100)
+            {
+                int newProb = Random.Range(1, 4);
+                if (newProb == 1)
+                {
+                    print("Ruidger");
+                    Instantiate(gdsa[8], spawnPoint.transform.position, transform.rotation);
+                }
+                else if (newProb == 2)
+                {
+                    print("Lauren");
+                    Instantiate(gdsa[9], spawnPoint.transform.position, transform.rotation);
+                }
+                else
+                {
+                    print("Mikey");
+                    Instantiate(gdsa[10], spawnPoint.transform.position, transform.rotation);
                 }
             }
         }
-        else if (prob > 30 && prob <= 100)
+        else
         {
-            int newProb = Random.Range(1, 4);
-            if (newProb == 1)
-            {
-                {
-                    print("Ruidger");
-                }
-            }
-            else if (newProb == 2)
-            {
-                {
-                    print("Lauren");
-                }
-            }
-            else
-            {
-                {
-                    print("Mikey");
-                }
-            }
+            print("Not enough money");
         }
     }
 }
