@@ -4,12 +4,24 @@ using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class Gacha : MonoBehaviour
 {
     [SerializeField] List<GameObject> gdsa = new List<GameObject>();
     [SerializeField] private int money;
     [SerializeField] private GameObject spawnPoint;
+    [SerializeField] TMP_Text currencyText;
+
+    private void Start()
+    {
+        currencyText.SetText(money.ToString());
+    }
+
+    private void Update()
+    {
+        currencyText.SetText(money.ToString());
+    }
 
     public void Roll()
     {
